@@ -2,7 +2,7 @@
     height: 100%;
 } */
 .wrapper{
-    background-color :#a8dedd ;
+    background-color:white ;
     height: 93.7vh;
 }
 .jumbotron{
@@ -11,7 +11,7 @@
 }
 .container{
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     
 }
 

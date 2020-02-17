@@ -15,7 +15,6 @@ var db = require("./app/models");
 // Import routes and give the server access to them.
 
 require("./app/routes/api-routes.js")(app);
-
 require("./app/routes/html-routes.js")(app);
 
 // Static directory to be served
