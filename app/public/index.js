@@ -1,12 +1,20 @@
-    $(document).ready(function(){
+var unlock = "";
+var unlock2 = "";
+var limit = [];
+var limit2 = [];
+var width = '';
+var lockFlag = false;
+var enable = true;
+var border = document.getElementById("border");
+var border2 = document.getElementById("border2");
+var line = document.querySelector(".box");
+
+$(document).ready(function(){
     //Entrance page overlay
         $("#main").hide();
         $(".contactForm").hide();
         $("#border").hide();
         $("#border2").hide();
-    
-        
-        
     
         var sound = $(".foot").prepend("<i class='icon fas fa-volume-mute'><p id = 'sound'>Click to turn volume on</p></i>");
     
@@ -14,21 +22,16 @@
             $(".fa-volume-mute").replaceWith("<i class='icon fas fa-volume-up'><p id = 'sound'>Now Scroll!</p></i>");
         })
        
-        
         var letter = $(".box");
         var letter2 = $(".box2");
     
         letter.hide();
         letter2.hide();
     
-        var audio = new Audio("./assets/sounds/ding.wav");
+        var audio = new Audio("../assets/ding.wav");
     
           
-        if (mobile.matches){
-            //Mobile doesn't work unfortunately so we removed it
-            $("#main").show();     
-                
-        }
+        
             letter.trigger('click');
             //Obtain Mouse Scroll Information up or down
     
@@ -45,7 +48,7 @@
             // console.log(unlock2);
     
             //Honestly I'm pretty big brained, but to scale I just get width yeehaw
-            var width = document.getElementById("lock").offsetWidth;
+            width = document.getElementById("lock").offsetWidth;
             //console.log(width);
             
             
@@ -87,6 +90,8 @@
                 }
                 
             }
+        })
+        
             
 function ding(){
         audio.play();
@@ -132,4 +137,5 @@ function entrance(){
         });
        
 }
-});  
+
+}) 
