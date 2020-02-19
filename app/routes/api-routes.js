@@ -8,7 +8,7 @@ module.exports = function(app) {
         })
     })
 
-    app.post("/api/contacts", function(req,res){
+    app.post("/api/contacts/", function(req,res){
         db.Contacts.create({
             name: req.body.name,
             email: req.body.email,
