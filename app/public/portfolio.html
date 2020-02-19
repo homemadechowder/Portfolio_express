@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a id = "sim" class="nav-link" href="#">Link</a>
@@ -65,7 +65,8 @@
     <div class = "wrapper">
       <div class = "container">
           <div class="jumbotron">
-              <h1 class="display-4">Andrew's Homepage</h1><hr>
+              <h1 class="display-4">Portfolio Items</h1>
+              <hr>
               <p class="lead"> </p>
           </div>
           <div class = "row">
@@ -76,13 +77,13 @@
                 
                 <i class="fas fa-utensils fa-3x"></i>
             </div>
-            <div id = "rpg" class = "col-sm-6 col-md-3 pPage rpg">
-                <br>
-                <h1>Star Wars RPG</h1>
-                <br>
-                
-                <i class="fas fa-jedi fa-3x"></i>
-            </div>
+            <div id = "project2" class = "col-sm-6 col-md-3 pPage project2">
+              <br>
+              <h1>The Silver Screen</h1>
+              <br>
+              
+              <i class="fas fa-film fa-3x"></i>
+          </div>
             <div id = "giftas" class = "col-sm-6 col-md-3 pPage giftas">
                 <br>
                 <h1>GifTastic</h1>
@@ -132,13 +133,13 @@
                 
                 <i class="fab fa-android fa-3x"></i>
             </div>
-            <div id = "comingsoon" class = "col-sm-6 col-md-3 pPage comingsoon">
-                <br>
-                <h1>Coming Soon</h1>
-                <br>
-                
-                <i class="fab fa-accessible-icon fa-3x"></i>
-            </div>
+            <div id = "rpg" class = "col-sm-6 col-md-3 pPage rpg">
+              <br>
+              <h1>Star Wars RPG</h1>
+              <br>
+              
+              <i class="fas fa-jedi fa-3x"></i>
+          </div>
             <div id = "comingsoon" class = "col-sm-6 col-md-3 pPage comingsoon">
                 <br>
                 <h1>Coming Soon</h1>
@@ -155,8 +156,27 @@
             </div>
         </div>
       </div>
+      <div class = "row">
+        <div class = "col-md-12 footer">
+            <br>
+            <i class="fab fa-facebook-square fa-2x footic"></i>
+            &nbsp;
+            &nbsp;
+            <i class="fab fa-instagram fa-2x footic"></i>
+            &nbsp;
+            &nbsp;
+            <i class="fab fa-github fa-2x footic"></i>
+            &nbsp;
+            &nbsp;
+            <i class="fab fa-linkedin fa-2x footic"></i>           
+        </div>
+       
+        <div class = "col-md-12 footer">
+            Copyright @ github.com/homemadechowder
+        </div>
+    </div>
       </div>
   
-
+<script src = "portfolio.js"></script>
 </body>
 </html>
