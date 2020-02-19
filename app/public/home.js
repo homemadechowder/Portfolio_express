@@ -7,11 +7,11 @@ function menu(){
 
         switch(item){
             case "aboutme":
-                res.redirect('/aboutme');
+                window.location.href('/aboutme');
             case "portfolio":
-                res.redirect('/portfolio')
+                window.location.href('/portfolio')
             case "contactme":
-                contactPage();
+                window.location.href('/contactme');
                 break;
             case "techdemo":
                
@@ -27,5 +27,16 @@ function menu(){
     
 }
 
+$(".fa-linkedin").click(function(){
+    window.open("https://www.linkedin.com/in/andrew-lu-2997b0109/","_blank");
+})
+
+$(".fa-facebook-square").click(function(){
+    window.open("https://www.facebook.com/SchismoGenesis","_blank");
+})
+
+$(".fa-github").click(function(){
+    window.open("https://www.github.com/homemadechowder","_blank");
+})
 
 $(document).on("click", ".homeCard", menu);

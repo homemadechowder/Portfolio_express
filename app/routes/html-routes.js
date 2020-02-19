@@ -14,12 +14,15 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
-  //To registration page
   app.get("/home", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
+
+  app.get("/aboutme", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/about.html"));
+  });
+
   
-  //To user interface to add movies
   app.get("/portfolio", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/portfolio.html"));
     console.log(req.body.first_name);

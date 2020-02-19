@@ -1,6 +1,10 @@
 /* body, html{
     height: 100%;
 } */
+label{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 200%;
+}
 .wrapper{
     background-color:white ;
     height: 93.7vh;
@@ -35,6 +39,7 @@
 }
 .cards{
     background-color: white;
+    color: black;
     font-family: 'Bebas Neue', cursive;
     height: 200px;
     text-align: center;
@@ -54,6 +59,7 @@
 
 .cards:hover{
     background-color: white;
+    color: black;
     transform: scale(1.2);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     

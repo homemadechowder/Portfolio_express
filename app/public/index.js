@@ -27,9 +27,7 @@ $(document).ready(function(){
     letter2.hide();
     
     var audio = new Audio("../assets/ding.wav");
-    
-          
-        
+   
         letter.trigger('click');
         
         //Obtain Mouse Scroll Information up or down
@@ -70,13 +68,12 @@ $(document).ready(function(){
         }
            
             if (limit.length - limit2.length === 5){
-                lockFlag = true;
+                lockFlag = true;    
                 console.log("unlocked by flag");
                 console.log(unlock);
                 console.log(unlock2);
                 if (unlock == "top: 200px;"&& unlock2 == "top: 320px;"){
                     console.log("unlocked");
-                    
                     entrance();
                 }
                 else{
@@ -127,5 +124,17 @@ function entrance(){
         });
        
 }
+
+$(".fa-linkedin").click(function(){
+    window.open("https://www.linkedin.com/in/andrew-lu-2997b0109/","_blank");
+})
+
+$(".fa-facebook-square").click(function(){
+    window.open("https://www.facebook.com/SchismoGenesis","_blank");
+})
+
+$(".fa-github").click(function(){
+    window.open("https://www.github.com/homemadechowder","_blank");
+})
 
 }) 
